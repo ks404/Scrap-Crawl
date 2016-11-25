@@ -14,3 +14,7 @@ comment out in metalapp/scraper/settings.py=
 #    'dynamic_scraper.pipelines.ValidationPipeline',
 #    'metalapp.scraper.pipelines.DjangoWriterPipeline',
 #]
+
+added a bunch of heroku reqs
+
+added app/metalproject/static to satisfy collectstatic 
