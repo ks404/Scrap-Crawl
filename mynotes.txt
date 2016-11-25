@@ -1,0 +1,16 @@
+pip install scrapy, django-dynamic-scrapper, scrappy-djangoitem
+
+use virtualenv
+
+change = 
+
+#from scrapy.contrib.djangoitem import DjangoItem
+from scrapy_djangoitem import DjangoItem
+
+comment out in metalapp/scraper/settings.py=
+
+#Scrapy up to 0.18
+#ITEM_PIPELINES = [
+#    'dynamic_scraper.pipelines.ValidationPipeline',
+#    'metalapp.scraper.pipelines.DjangoWriterPipeline',
+#]
