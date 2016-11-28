@@ -15,4 +15,3 @@ class ListingSpider(DjangoSpider):
         self.scraped_obj_item_class = ListingItem
         super(ListingSpider, self).__init__(self, *args, **kwargs)
 
-#erase **kwargs in line 9 and 16

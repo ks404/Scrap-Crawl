@@ -11,8 +11,8 @@ from subprocess import call #lets your run commandline
 
 def copper(request):
 
-	
-	call(['scrapy crawl listing_spider -a id=1 -a do_action=yes '], stdin=None, stdout=None, stderr=None, shell=True)
+	# deleted '-a id=1' before -a do action
+	call(['scrapy crawl listing_spider  -a do_action=yes '], stdin=None, stdout=None, stderr=None, shell=True)
 
 	#works with shell=true, but not false. Why?
 
