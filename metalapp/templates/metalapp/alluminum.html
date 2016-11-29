@@ -88,30 +88,6 @@ $(document).ready(function() {
 
 </div>
 
-<div class = "container">
-
-
-
-<div class = "row">
-
-
-<div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Select Metal Type
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href = "{% url 'copper' %}" > Copper </a></li>
-    <li><a href = "{% url 'stainless' %}" > Stainless </a></li>
-    <li><a href = "{% url 'shells' %}" > Shells </a></li>
-    <li><a href = "{% url 'copper' %}" > Copper </a></li>
-     <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
-</div>
-
-</div>
-
 
 
 <div class = "container">
@@ -120,45 +96,45 @@ $(document).ready(function() {
 
 
 <h4> Alluminum Auctions: </h4>
- 		
+    
 
-		<div class = "col-xs-12 col-md-12 col-lg-12">
+    <div class = "col-xs-12 col-md-12 col-lg-12">
 
-			<table id='ltable' class="table table-striped table-bordered" >
+      <table id='ltable' class="table table-striped table-bordered" >
 
 
-			<thead>
-  				<tr>	
-  	 				<th>Material</th>
-    				<th>Weight</th> 
-    				<th>Closing Date</th>
-    				<th>Location</th>
+      <thead>
+          <tr>  
+            <th>Material</th>
+            <th>Weight</th> 
+            <th>Closing Date</th>
+            <th>Location</th>
             <th>Current Bid</th>
-    				<th>Link</th>
-    				<th>Search Term</th>
+            <th>Link</th>
+            <th>Search Term</th>
 
-  				</tr>
-  			</thead>
-				
+          </tr>
+        </thead>
+        
 
-			<tbody>	
-				<tr>
-				{% for i in outtable %}
-					
-  					<td>{{ i.material }} </a> </td>
-  					<td>{{ i.weight }} </a></td>
-  					<td>{{ i.closing }} </td>
-  					<td>{{ i.location }} </td>
+      <tbody> 
+        <tr>
+        {% for i in outtable %}
+          
+            <td>{{ i.material }} </a> </td>
+            <td>{{ i.weight }} </a></td>
+            <td>{{ i.closing }} </td>
+            <td>{{ i.location }} </td>
             <td>{{ i.price }} </td>
-  					<td>{{ i.link }} </td>
-  					<td>{{ i.search_term }}</td>
-				</tr>
-				{% endfor %}
-			</tbody>
-				</table>
+            <td>{{ i.link }} </td>
+            <td>{{ i.search_term }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+        </table>
 
-		</div>
-	</div>
+    </div>
+  </div>
 
 
 </div>
