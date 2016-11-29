@@ -29,7 +29,7 @@ def copper(request):
 def alluminum(request):
 
 	
-	call(['scrapy crawl listing_spider -a do_action=yes '], stdin=None, stdout=None, stderr=None, shell=True)
+	call(['scrapy crawl listing_spider -a id=1 -a do_action=yes '], stdin=None, stdout=None, stderr=None, shell=True)
 
 	template = loader.get_template('metalapp/alluminum.html')
 	
