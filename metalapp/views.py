@@ -12,7 +12,7 @@ from subprocess import call #lets your run commandline
 def copper(request):
 
 	# deleted '-a id=1' before -a do action
-	call(['scrapy crawl listing_spider -a do_action=yes '], stdin=None, stdout=None, stderr=None, shell=True)
+	call(['scrapy crawl listing_spider -a id=1 do_action=yes '], stdin=None, stdout=None, stderr=None, shell=True)
 
 	#works with shell=true, but not false. Why?
 
@@ -29,7 +29,7 @@ def copper(request):
 def alluminum(request):
 
 	
-	call(['scrapy crawl listing_spider -a id=1 -a do_action=yes '], stdin=None, stdout=None, stderr=None, shell=True)
+	call(['scrapy crawl listing_spider -a id=4 -a do_action=yes '], stdin=None, stdout=None, stderr=None, shell=True)
 
 	template = loader.get_template('metalapp/alluminum.html')
 	
@@ -42,7 +42,7 @@ def alluminum(request):
 def stainless(request):
 
 	
-	call(['scrapy crawl listing_spider -a id=4 -a do_action=yes '], stdin=None, stdout=None, stderr=None, shell=True)
+	call(['scrapy crawl listing_spider -a id=2 -a do_action=yes '], stdin=None, stdout=None, stderr=None, shell=True)
 
 	template = loader.get_template('metalapp/stainless.html')
 	
@@ -55,7 +55,7 @@ def stainless(request):
 def shells(request):
 
 	
-	call(['scrapy crawl listing_spider -a id=5 -a do_action=yes '], stdin=None, stdout=None, stderr=None, shell=True)
+	call(['scrapy crawl listing_spider -a id=3 -a do_action=yes '], stdin=None, stdout=None, stderr=None, shell=True)
 
 	template = loader.get_template('metalapp/shells.html')
 	
